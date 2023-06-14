@@ -4,21 +4,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Trial - Demo</title>
+  <!-- //////////********** JS FILE **********////////// -->
+  <script defer src="assets/js/App.js"></script>
+  <!-- //////////********** JS FILE **********////////// -->
+
+  <!-- //////////********** W3 CSS **********////////// -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- //////////********** W3 CSS **********////////// -->
+
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <link href="assets/css/bootstrap-code.css" rel="stylesheet" />
+
+  <!-- //////////********** FONT AWESOME **********////////// -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- //////////********** FONT AWESOME **********////////// -->
+
+  <!-- //////////********** Custom Google Web Font **********////////// -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link
+    href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic400italic,700italic,900italic'
+    rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet'>
+  <!-- //////////********** Custom Google Web Font **********////////// -->
+
+  <!-- //////////********** GOOGLE FONTS **********////////// -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- //////////********** GOOGLE FONTS **********////////// -->
+
+  <!-- //////////********** MDB **********////////// -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- //////////********** MDB **********////////// -->
+
+  <!-- //////////********** POPPINS **********////////// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- //////////********** POPPINS **********////////// -->
+
+  <!-- //////////********** FONT AWESOME JS **********////////// -->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- //////////********** FONT AWESOME js **********////////// -->
 </head>
 
 <body>
 
-  <h3>Send Bulk Email To Your Clients</h3>
+
+  <header>
+
+    <!-- NAV  -->
+    <nav class="navbar nav-justified p-3 navbar-light bg-white shadow-1 fixed-top">
+      <a class="navbar-brand " href="#" target="_blank">
+        <h3 class="">NYM.Js</h3>
+      </a>
+      <a class="navbar-item" href="#">
+        <h5 class="">Free Trial</h5>
+      </a>
+    </nav>
+    <!-- END NAV  -->
+
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+        background-image: url('assets/img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+        height: 100vh;
+      ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3 hero-h1">Free Trial</h1>
+            <h4 class="mb-3 hero-h4">Try Sending e-mails to your contacts</h4>
+            <a class="btn btn-outline-light btn-lg notAvailable" href="#single" role="button">Single</a>
+            <a class="btn btn-outline-light btn-lg notAvailable" href="#multiple" role="button">Multiples</a>
+            <div class="icon mt-5"><a href="#getting-started" class="icon-btn"><i class="fas fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+  <div class="w3-row" id="single">
+    <div class="w3-half p-5 pt-5">
+
+      <div class="tittles">
+        <h3>Single</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">Send a Single Email at a Time</h6>
+      </div>
+
+      <div class="code-two p-5 mt-3 shadow-6-strong">
+        <code>
+              <p>
+                <span class="variable">Email</span>.<span class="function-name">send</span>({ <br>
+                    <span class="tag">SecureToken</span> : <span class="property-value">"C973D7AD-F097-4B95-91F4-40ABC5567812"</span>, <br>
+                    <span class="tag">Username</span> : <span class="property-value">"username"</span>, <br>
+                    <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
+                    <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
+                    <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
+                    <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                    <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
+              }).<span class="function-name">then</span>( <br>
+               <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
+              );<br>
+              </p>
+            </code>
+      </div>
+
+    </div>
+
+    <div class="w3-half p-5 pt-5">
+      <div class="tittles">
+        <h3>Variables</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">Fill-in the Necessary Requirements</h6>
+      </div>
+
+      <form>
+        <!-- <label>SecureToken :</label>
+        <input class="form-control w-50" type="text" value="C973D7AD-F097-4B95-91F4-40ABC5567812" readonly> -->
+
+        <label>Username :</label>
+        <input class="form-control w-50" type="text" value="yakubuanas" readonly>
+
+        <label>Password :</label>
+        <input class="form-control w-50" type="password" value="12345678" readonly>
+
+        <label>To :</label>
+        <input class="form-control w-50" type="email">
+
+        <label>From :</label>
+        <input class="form-control w-50" type="email" value="yakubuanas04@gmail.com" readonly>
+
+        <label>Subject :</label>
+        <input class="form-control w-50" type="text">
+
+        <label>Body :</label>
+        <input class="form-control w-50" type="text">
+      </form>
+
+    </div>
+  </div>
+
+  <!-- MULTIPLE -->
+
+  <div class="w3-row" id="multiple">
+    <div class="w3-half p-5 pt-5">
+
+      <div class="tittles">
+        <h3>Variables</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">Fill-in the Necessary Requirements</h6>
+      </div>
+
+      <form>
+        <!-- <label>SecureToken :</label>
+        <input class="form-control w-50" type="text" value="C973D7AD-F097-4B95-91F4-40ABC5567812" readonly> -->
+
+        <label>Username :</label>
+        <input class="form-control w-50" type="text" value="yakubuanas" readonly>
+
+        <label>Password :</label>
+        <input class="form-control w-50" type="password" value="12345678" readonly>
+
+        <label>To :</label>
+        <input class="form-control w-50" type="email">
+
+        <label>From :</label>
+        <input class="form-control w-50" type="email" value="yakubuanas04@gmail.com" readonly>
+
+        <label>Subject :</label>
+        <input class="form-control w-50" type="text">
+
+        <label>Body :</label>
+        <input class="form-control w-50" type="text">
+      </form>
+
+    </div>
+
+    <div class="w3-half p-5 pt-5">
+
+      <div class="tittles">
+        <h3>Multiple</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">Send a Multiple Emails to your contacts</h6>
+      </div>
+
+      <div class="code-two p-5 mt-3 shadow-6-strong">
+        <code>
+              <p>
+                <span class="variable">Email</span>.<span class="function-name">send</span>({ <br>
+                    <span class="tag">SecureToken</span> : <span class="property-value">"C973D7AD-F097-4B95-91F4-40ABC5567812"</span>, <br>
+                    <span class="tag">Username</span> : <span class="property-value">"username"</span>, <br>
+                    <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
+                    <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
+                    <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
+                    <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                    <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
+              }).<span class="function-name">then</span>( <br>
+               <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
+              );<br>
+              </p>
+            </code>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <h3>Send Bulk Email To Your Clients</h3>
   <button class="send btn btn-primary">Send Email</button>
 
   <form>
     <input type="text" id="inputField">
     <button type="button" onclick="addToArray()">Add to Array</button>
   </form>
-  <div class="result"></div>
+  <div class="result"></div> -->
 
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- //////////********** MDN JS **********////////// -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- //////////********** MDN JS **********////////// -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+  <!-- //////////********** JQUERY **********////////// -->
+  <script src=" https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
+  <!-- //////////********** JQUERY **********////////// -->
 </body>
 
 </html>

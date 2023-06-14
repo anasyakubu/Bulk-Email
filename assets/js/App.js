@@ -10,7 +10,7 @@ const send = document.querySelector('.send');
 
 send.addEventListener('click', (e) => {
   e.preventDefault();
-  // alert('Working');
+  alert('Working');
   //alert(emails);
 
   emails.forEach(emails => {
@@ -50,11 +50,3 @@ function addToArray() {
   result.innerHTML = myArray;
   console.log(myArray);
 }
-
-
-// emails.forEach(emails => alert(emails));
-
-
-// for (let i = 0; i < emails.length; i++) {
-//   console.log(emails)
-// }
