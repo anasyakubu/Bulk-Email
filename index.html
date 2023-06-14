@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Email</title>
+
+  <!-- //////////********** JS FILE **********////////// -->
+  <script defer src="assets/js/App.js"></script>
+  <!-- //////////********** JS FILE **********////////// -->
+
+  <!-- //////////********** W3 CSS **********////////// -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- //////////********** W3 CSS **********////////// -->
+
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <link href="assets/css/bootstrap-code.css" rel="stylesheet" />
+
+  <!-- //////////********** FONT AWESOME **********////////// -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- //////////********** FONT AWESOME **********////////// -->
+
+  <!-- //////////********** Custom Google Web Font **********////////// -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link
+    href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic400italic,700italic,900italic'
+    rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet'>
+  <!-- //////////********** Custom Google Web Font **********////////// -->
+
+  <!-- //////////********** GOOGLE FONTS **********////////// -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- //////////********** GOOGLE FONTS **********////////// -->
+
+  <!-- //////////********** MDB **********////////// -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- //////////********** MDB **********////////// -->
+
+  <!-- //////////********** POPPINS **********////////// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- //////////********** POPPINS **********////////// -->
+
+  <!-- //////////********** FONT AWESOME JS **********////////// -->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- //////////********** FONT AWESOME js **********////////// -->
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+        background-image: url('assets/img/wallpaperflare.com_wallpaper\ \(5\).jpg');
+        height: 100vh;
+      ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3 hero-h1">NYM.Js</h1>
+            <h4 class="mb-3 hero-h4">Send email from Javascript</h4>
+            <a class="btn btn-outline-light btn-lg notAvailable" href="#!" role="button">CDN</a>
+            <a class="btn btn-outline-light btn-lg notAvailable" href="#!" role="button">Download</a>
+            <div class="icon mt-5"><a href="#getting-started" class="icon-btn"><i class="fas fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!-- NAV  -->
+  <nav class="navbar nav-justified p-3 navbar-light bg-white shadow-1">
+    <a class="navbar-brand " href="#" target="_blank">
+      <h3 class="">NYM.Js</h3>
+    </a>
+    <a class="navbar-item" href="#security">
+      <h5 class="">Security</h5>
+    </a>
+  </nav>
+  <!-- END NAV  -->
+
+  <!-- GETTING STARTED SECTION -->
+
+  <div class="w3-row text-center mb-5" id="getting-started">
+
+    <h2 class="m-3 mt-5">Getting started</h2>
+
+    <div class="text-get-started text-center mt-5">
+      <h6>1. Include the script:</h6>
+    </div>
+
+    <div class="code-one p-5 mt-3 m-5 shadow-6-strong">
+      <code>
+    <p>
+      <span><</span><span class="tag">script</span> <span class="variable">src</span><span>=<span class="property-value">"https://nymjs.com/v3/nym.js"</span></span><span>></span> <br>
+      <span><</span><span>/</span><span class="tag">script</span><span>></span> 
+    </p>
+  </code>
+    </div>
+
+    <div class="text-get-started text-center mt-5">
+      <h6>2. Send an email using:</h6>
+    </div>
+
+    <div class="code-two p-5 mt-3 m-5 shadow-6-strong">
+      <code>
+        <p>
+          <span class="variable">Email</span>.<span class="function-name">send</span>({ <br>
+              <span class="tag">Host</span> : <span class="property-value">"nym.elasticemail.com"</span>, <br>
+              <span class="tag">Username</span> : <span class="property-value">"username"</span>, <br>
+              <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
+              <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
+              <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
+              <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+              <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
+        }).<span class="function-name">then</span>( <br>
+         <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
+        );<br>
+        </p>
+      </code>
+    </div>
+
+    <div class="m-3">
+      <h6>No NYM server?</h6>
+      <button class="btn btn-success notAvailable">Setup an NYM server Here</button>
+    </div>
+
+  </div>
+  <!-- GETTING STARTED SECTION -->
+
+  <!-- SECURITY SECTION -->
+  <div class="w3-row" style="background-color: #f8f8f8;" id="security">
+
+    <div class="w3-half p-5 pt-5">
+      <div class="tittles">
+        <h3>Security</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3"> Whoa !,
+          wait a minute. I don't want my NYM credentials visible to <br> the world!</h6>
+
+        <p class="mt-5">We've thought of that, so instead you can encrypt your NYM credentials, and lock it to a
+          single
+          domain, and
+          pass a secure token instead of the credentials instead, for example:</p>
+
+        <div class="code-two p-5 mt-3 shadow-6-strong">
+          <code>
+              <p>
+                <span class="variable">Email</span>.<span class="function-name">send</span>({ <br>
+                    <span class="tag">SecureToken</span> : <span class="property-value">"C973D7AD-F097-4B95-91F4-40ABC5567812"</span>, <br>
+                    <span class="tag">Username</span> : <span class="property-value">"username"</span>, <br>
+                    <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
+                    <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
+                    <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
+                    <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                    <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
+              }).<span class="function-name">then</span>( <br>
+               <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
+              );<br>
+              </p>
+            </code>
+        </div>
+
+        <div>
+          <button class="btn btn-success mt-3 shadow-0 notAvailable">Encrypt your NYM Credentials</button>
+        </div>
+
+        <div class="mt-3">
+          <p class="text-dark"><span class="text-danger">Note</span>: By default, the NYM connection is secure
+            (STARTTLS)
+            and over port 25.
+            If you
+            need to
+            use an NYM
+            server that does not accepts secure connections, or in on a non-standard port, like 587, then use the button
+            above "Encrypt your NYM Credentials" to store advanced configuration.</p>
+        </div>
+        <div>
+          <hr class="lead2">
+        </div>
+
+        <div>
+          <p class="text-dark"><span class="text-success">Need an NYM server:</span> <br>
+            If you don't have access to an NYM server, you can create one by opening an account at Elastic Email.com,
+            then pressing Settings > NYM/API, and using the NYM configuration shown.</p>
+        </div>
+
+        <div>
+          <button class="btn btn-success mt-3 shadow-0 notAvailable">Get NYM Credentials</button>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="w3-half p-5">
+      <div class="text-center">
+        <img src="assets/img/padlock.png" alt="Padlock" width="250px">
+      </div>
+    </div>
+  </div>
+  <!-- SECURITY SECTION -->
+
+  <!-- ANTI SPAM SECTION -->
+  <div class="w3-row m-5" id="antiSpam">
+
+    <div class="w3-half p-5">
+      <div class="text-center">
+        <img src="assets/img/virus.png" alt="Anti-Spam" width="250px">
+      </div>
+    </div>
+
+    <div class="w3-half p-5">
+      <div class="tittles">
+        <h3>Anti Spam</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <p class="mt-5">We don't like spam. Nobody does.</p>
+
+        <h6 class="lead3">We have a zero tolerance for spam. If you get one spam report, we close your account. Sorry
+          about that, but this is a free service, and we're not taking any heat for you.</h6>
+      </div>
+
+      <div class="mt-5">
+        <button class="btn btn-primary shadow-0 notAvailable">Report Spam</button>
+      </div>
+    </div>
+  </div>
+  <!-- ANTI SPAM SECTION -->
+
+  <!-- FREE SECTION -->
+  <div class="w3-row mt-5 p-5" style="background-color: #f8f8f8;">
+    <div class="w3-half p-3">
+      <div class="tittles">
+        <h3>It's free!</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">This is a free script, no usage restrictions. You can include it license free, in any project,
+          either commercial or non commercial.</h6>
+      </div>
+
+      <div class="tittles">
+        <h6 class="mb-2">Attachments:</h6>
+        <p class="text-dark">Want to send with attachments?, use the Attachments property:</p>
+      </div>
+
+      <div class="code-two p-5 mt-3 shadow-6-strong">
+        <code>
+            <p>
+              <span class="variable">Email</span>.<span class="function-name">send</span>({ <br>
+                  <span class="tag">SecureToken</span> : <span class="property-value">"C973D7AD-F097-4B95-91F4-40ABC5567812"</span>, <br>
+                  <span class="tag">Username</span> : <span class="property-value">"username"</span>, <br>
+                  <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
+                  <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
+                  <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
+                  <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                  <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
+                  <span class="tag">Attachments</span> : [ <br>{ <br> <br><span class="tag">name</span> : <span class="property-value">"nym.png"</span>,<br><span class="tag">path</span> : <span class="property-value">"https://files.nympng"</span><br> <br>}] <br> <br>
+            }).<span class="function-name">then</span>( <br>
+             <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
+            );<br>
+            </p>
+          </code>
+      </div>
+
+      <div class="mt-3">
+        <p class="text-dark"><span class="text-primary">Dev Tip:</span> If you want to send an attachment in base64
+          format, instead of
+          passing "path" as a
+          property, send a
+          "data" property in dataUri format. in dataUri format. (Example coming soon!)</p>
+
+        <p class="text-dark"><span class="text-info">Sending multiple emails:</span>
+          The "To" property can be an array of email addresses, instead of just one.</p>
+      </div>
+
+    </div>
+
+    <div class="w3-half p-3">
+      <div class="tittles">
+        <h3>Callbacks</h3>
+      </div>
+
+      <div class="sub-tittles">
+        <h6 class="lead3">If your code needs to know when the email is sent before continuing, then you should use the
+          promise returned from the send function. This will pass a message of "OK" for success, and an error message
+          as failure.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- FREE SECTION -->
+
+  <!-- DEMO SECTION -->
+  <div class="m-5 text-center"><a href="demo.html" target="_blank" class="btn btn-primary">Send Free Demo E-mail To Some
+      of Your
+      Contacts</a>
+  </div>
+  <!-- DEMO SECTION -->
+
+
+  <!-- FOOTER SECTION -->
+  <div class="w3-row " style="background-color: #edeff1; color: #bac1c8;">
+    <div class="w3-twothird p-5">
+      <h2>Follow Me!</h2>
+      <p>Got some comments or suggestions? - email me!</p>
+      <p class="text-dark">info@nymjs.com</p>
+      <button class="btn btn-primary notAvailable"><i class="fab fa-twitter"></i> Follow @nym</button>
+    </div>
+    <div class="w3-third p-5" style="background-color: #34495e; color: #fff; height: 100%;">
+      <h4>NYM.JS was developed by
+        <a href="#" class="text-white"><u>NYM Technologies Ltd</u></a>
+      </h4>
+    </div>
+  </div>
+  <!-- FOOTER SECTION -->
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- //////////********** MDN JS **********////////// -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <!-- //////////********** MDN JS **********////////// -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+  <!-- //////////********** JQUERY **********////////// -->
+  <script src=" https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
+  <!-- //////////********** JQUERY **********////////// -->
+
+</body>
+
+</html>

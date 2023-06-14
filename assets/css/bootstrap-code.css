@@ -1,0 +1,118 @@
+/* code {
+  background-color: #001d37;
+  color: #d4d4d4;
+} */
+
+/* Text colors */
+p,
+span,
+a,
+code,
+pre,
+input,
+textarea {
+  color: #d4d4d4;
+}
+
+/* Comment color */
+.comment,
+.prolog,
+.doctype,
+.cdata {
+  color: #7f7f7f;
+}
+
+/* Keyword color */
+.keyword {
+  color: #ee0000;
+}
+
+/* String color */
+.string,
+.attr-value {
+  color: #00aa00;
+}
+
+/* Number color */
+.number {
+  color: #ff8800;
+}
+
+/* Boolean color */
+.boolean {
+  color: #ff8800;
+}
+
+/* Operator color */
+.operator {
+  color: #aaaaaa;
+}
+
+/* Punctuation color */
+.punctuation {
+  color: #d4d4d4;
+}
+
+/* Function color */
+.function-name {
+  color: #00bbbb;
+}
+
+/* Class color */
+.class-name {
+  color: #bb00bb;
+}
+
+/* Tag color */
+.tag {
+  color: #ee0000;
+}
+
+/* Attribute color */
+.attr-name {
+  color: #ee0000;
+}
+
+/* Built-in color */
+.builtin {
+  color: #bb00bb;
+}
+
+/* Variable color */
+.variable {
+  color: #ff8800;
+}
+
+/* Operator color */
+.operator {
+  color: #aaaaaa;
+}
+
+/* Meta color */
+.meta {
+  color: #d4d4d4;
+}
+
+/* CSS Selector color */
+.selector {
+  color: #d4d4d4;
+}
+
+/* CSS Property color */
+.property {
+  color: #aaaaaa;
+}
+
+/* CSS Value color */
+.property-value {
+  color: #00aa00;
+}
+
+/* CSS Unit color */
+.unit {
+  color: #00aa00;
+}
+
+.blue {
+  color: #1a9ee18f;
+}
