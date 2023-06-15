@@ -1,13 +1,11 @@
 // NOT AVAILABLE IN YOUR COUNTRY SCRIPT
 function notAvailable() {
-
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
-  snackbar.innerHTML = "NYM.JS is not Available in Your Country";
-
+  const message = "NYM.JS is not Available in Your Country 😥"
+  snackbar.innerHTML = message;
   // Add the "show" class to DIV
   x.className = "show";
-
   // After 3 seconds, remove the show class from DIV
   setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
@@ -40,11 +38,6 @@ function single() {
 
 // SEND MULTIPLE EMAIL
 
-
-// const multipleTo = document.querySelector(".multipleTo").value;
-const multipleBody = document.querySelector(".multipleBody").value;
-const multipleForm = document.querySelector(".multipleForm");
-
 // Define an empty array
 var myArray = [];
 function addToArray() {
@@ -53,8 +46,18 @@ function addToArray() {
 
   // Check if the array has reached the limit
   if (myArray.length >= 3) {
-    console.log("Array limit reached");
-    return; // Exit the function if the limit is reached
+    // console.log("Array limit reached");
+    const message = "Maximum limit reached";
+    var x = document.getElementById("snackbar");
+    snackbar.innerHTML = message;
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    return false;
+    multipleTo.reset();
   }
 
   // Add the value to the array
@@ -63,14 +66,35 @@ function addToArray() {
   // Optional: Display the array
   const result = document.querySelector('small');
   result.innerHTML = myArray;
-  console.log(myArray);
 
-  function multiple() {
-    alert("Working");
-    console.log(Array);
-  }
+  // console.log(myArray);
+}
+
+function multiple() {
+  // alert("Working");
+
+  // const multipleTo = document.querySelector(".multipleTo").value;
+  const multipleBody = document.querySelector(".multipleBody").value;
+  const multipleForm = document.querySelector(".multipleForm");
+  // myArray.forEach(element => { alert(element); });
+
+  myArray.forEach(emails => {
+    Email.send({
+      SecureToken: "864e6dbb-9d31-47ca-8af1-4371d598e59f",
+      To: emails,
+      From: 'yakubuanas04@gmail.com',
+      Subject: "NYM Emailing System (Multiple)",
+      Body: "<h3>" + multipleBody + "</h3>" +
+        "<h6>Thank You..</h6>",
+    }).then(
+      message => alert(message + " " + "Check your Email"),
+      multipleForm.reset(),
+      // alert("Sent")
+    );
+  });
 
 }
+
 
 
 

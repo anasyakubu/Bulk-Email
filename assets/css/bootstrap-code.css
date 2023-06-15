@@ -127,7 +127,7 @@ textarea {
   /* Set a default minimum width */
   margin-left: -125px;
   /* Divide value of min-width by 2 */
-  background-color: #f60808;
+  background-color: #9f2c2cd0;
   /* Black background color */
   color: #fff;
   /* White text color */
@@ -145,6 +145,7 @@ textarea {
   /* Center the snackbar */
   bottom: 30px;
   /* 30px from the bottom */
+  border-radius: 10px;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */

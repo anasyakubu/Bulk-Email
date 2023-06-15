@@ -85,3 +85,20 @@
 }
 
 /* GETTING STARTED SECTION */
+
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding-right: 32px;
+  /* Adjust as needed */
+}
+
+.input-container button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
