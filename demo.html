@@ -26,9 +26,9 @@
   <!-- //////////********** Custom Google Web Font **********////////// -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link
-    href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic400italic,700italic,900italic'
-    rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet'>
+    href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic400italic,700italic,900italic"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet">
   <!-- //////////********** Custom Google Web Font **********////////// -->
 
   <!-- //////////********** GOOGLE FONTS **********////////// -->
@@ -70,7 +70,7 @@
 
     <!-- Background image -->
     <div class="p-5 text-center bg-image" style="
-        background-image: url('assets/img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+        background-image: url('assets/img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg');
         height: 100vh;
       ">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -109,7 +109,7 @@
                     <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
                     <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
                     <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
-                    <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                    <span class="tag">Subject</span> : <span class="property-value">"NYM Emailing System (Single)"</span>,<br>
                     <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
               }).<span class="function-name">then</span>( <br>
                <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
@@ -129,27 +129,29 @@
         <h6 class="lead3">Fill-in the Necessary Requirements</h6>
       </div>
 
-      <form>
+      <form class="singleForm" onsubmit="single(); return false;">
         <!-- <label>SecureToken :</label>
         <input class="form-control w-50" type="text" value="C973D7AD-F097-4B95-91F4-40ABC5567812" readonly> -->
 
         <label>Username :</label>
-        <input class="form-control w-50" type="text" value="yakubuanas" readonly>
+        <input class="form-control w-75" type="text" value="yakubuanas" readonly>
 
         <label>Password :</label>
-        <input class="form-control w-50" type="password" value="12345678" readonly>
+        <input class="form-control w-75" type="password" value="12345678" readonly>
 
         <label>To :</label>
-        <input class="form-control w-50" type="email">
+        <input class="form-control w-75 singleTo" type="email">
 
         <label>From :</label>
-        <input class="form-control w-50" type="email" value="yakubuanas04@gmail.com" readonly>
+        <input class="form-control w-75" type="email" value="yakubuanas04@gmail.com" readonly>
 
         <label>Subject :</label>
-        <input class="form-control w-50" type="text">
+        <input class="form-control w-75" type="text" value="NYM Emailing System (Single)" readonly>
 
         <label>Body :</label>
-        <input class="form-control w-50" type="text">
+        <input class="form-control w-75 singleBody" type="text">
+
+        <button type="submit" class="btn btn-success mt-3">Send</button>
       </form>
 
     </div>
@@ -168,27 +170,32 @@
         <h6 class="lead3">Fill-in the Necessary Requirements</h6>
       </div>
 
-      <form>
+      <form class="multipleForm" onsubmit="multiple(); return false;">
         <!-- <label>SecureToken :</label>
         <input class="form-control w-50" type="text" value="C973D7AD-F097-4B95-91F4-40ABC5567812" readonly> -->
 
         <label>Username :</label>
-        <input class="form-control w-50" type="text" value="yakubuanas" readonly>
+        <input class="form-control w-75" type="text" value="yakubuanas" readonly>
 
         <label>Password :</label>
-        <input class="form-control w-50" type="password" value="12345678" readonly>
+        <input class="form-control w-75" type="password" value="12345678" readonly>
 
         <label>To :</label>
-        <input class="form-control w-50" type="email">
+        <input class="form-control w-75 multipleTo" type="email">
+        <div><small class=""></small>
+          <button type="button" onclick="addToArray(); return false;">Add to Array</button>
+        </div>
 
         <label>From :</label>
-        <input class="form-control w-50" type="email" value="yakubuanas04@gmail.com" readonly>
+        <input class="form-control w-75" type="email" value="yakubuanas04@gmail.com" readonly>
 
         <label>Subject :</label>
-        <input class="form-control w-50" type="text">
+        <input class="form-control w-75" type="text" value="NYM Emailing System (Multiple)" readonly>
 
         <label>Body :</label>
-        <input class="form-control w-50" type="text">
+        <input class="form-control w-75 multipleBody" type="text">
+
+        <button type="submit" class="btn btn-success mt-3">Send</button>
       </form>
 
     </div>
@@ -212,7 +219,7 @@
                     <span class="tag">Password</span>: <span class="property-value">"password"</span>, <br>
                     <span class="tag">To</span> : <span class="property-value">'them@website.com'</span>,<br>
                     <span class="tag">From</span>  :<span class="property-value">"you@isp.com"</span>, <br>
-                    <span class="tag">Subject</span> : <span class="property-value">"This is the subject"</span>,<br>
+                    <span class="tag">Subject</span> : <span class="property-value">"NYM Emailing System (Multiple)"</span>,<br>
                     <span class="tag">Body</span> : <span class="property-value">"And this is the body"</span> <br>
               }).<span class="function-name">then</span>( <br>
                <span class="tag">message</span> => <span class="function-name">alert</span>(<span class="tag">message</span>) <br>
