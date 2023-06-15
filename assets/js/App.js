@@ -1,6 +1,15 @@
 // NOT AVAILABLE IN YOUR COUNTRY SCRIPT
 function notAvailable() {
-  alert("NYM.JS is not Available in Your Country");
+
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+  snackbar.innerHTML = "NYM.JS is not Available in Your Country";
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 
 // SEND SINGLE EMAIL FUNCTIONS
@@ -22,8 +31,8 @@ function single() {
       Body: "<h3>" + singleBody + "</h3>" +
         "<h6>Thank You..</h6>",
     }).then(
-      message => alert(message + "Check your Email"),
-      singleForm.reset()
+      message => alert(message + " " + "Check your Email"),
+      singleForm.reset(),
       // alert("Sent")
     );
   }
