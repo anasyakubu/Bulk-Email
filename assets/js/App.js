@@ -57,7 +57,6 @@ function addToArray() {
     // After 3 seconds, remove the show class from DIV
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
     return false;
-    multipleTo.reset();
   }
 
   // Add the value to the array
